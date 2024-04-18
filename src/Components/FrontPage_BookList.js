@@ -16,7 +16,7 @@ function BookList() {
 //https://finalexam-300357124.onrender.com
 function getAllBooks(){
   axios
-  .get('https://react-final-300357124.onrender.com')
+  .get('https://server-1-rxp2.onrender.com')
   .then((res) => {
     setBooks(res.data);
   })
@@ -28,7 +28,7 @@ function getAllBooks(){
       console.log(id)
 
       axios
-      .delete('https://react-final-300357124.onrender.com'+id)
+      .delete('https://server-1-rxp2.onrender.com'+id)
       .then((res) => {
         getAllBooks()
         console.log(res.data)
