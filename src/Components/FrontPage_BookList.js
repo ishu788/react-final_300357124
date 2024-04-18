@@ -28,7 +28,7 @@ function getAllBooks(){
       console.log(id)
 
       axios
-      .delete('https://server-1-rxp2.onrender.com'+id)
+      .delete('https://server-1-rxp2.onrender.com/'+id)
       .then((res) => {
         getAllBooks()
         console.log(res.data)
