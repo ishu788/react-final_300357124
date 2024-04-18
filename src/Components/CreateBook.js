@@ -25,7 +25,7 @@ function CreateBook() {
 
     //https://finalexam-300357124.onrender.com
     axios
-    .post('http://localhost:5000/', createBookRequest)
+    .post('https://server-1-rxp2.onrender.com', createBookRequest)
     .then((res) => {
       let book = res.data.BookAdded
       console.log(book)
